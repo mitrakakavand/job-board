@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Doran';
   src: url('./assets/fonts/Doran-Thin.woff2') format('woff2');
@@ -35,13 +36,10 @@
   font-style: normal;
 }
 
-/* اعمال فونت Doran به همه عناصر اصلی */
 body, .navbar, .navbar-item, .register-btn, .login-link, .hero-title, .hero-subtitle, .search-bar, .search-input, .search-select, .stat-item, .stat-label, .stat-value {
-  font-family: 'Doran', Tahoma, sans-serif !important;
+  font-family: 'Doran', Tahoma, sans-serif ;
 }
 
-/* بهبود استایل هدر */
-/* نوار ناوبری مدرن */
 .navbar {
   background: rgba(18, 18, 18, 0.95);
   backdrop-filter: blur(12px);
@@ -67,7 +65,6 @@ body, .navbar, .navbar-item, .register-btn, .login-link, .hero-title, .hero-subt
   padding: 0.9rem 2.5rem;
 }
 
-/* منو */
 .navbar-menu {
   display: flex;
   gap: 2rem;
@@ -115,7 +112,6 @@ body, .navbar, .navbar-item, .register-btn, .login-link, .hero-title, .hero-subt
   width: 100%;
 }
 
-/* دکمه ثبت‌نام */
 .register-btn {
   background: linear-gradient(135deg, #f3c104, #ffd94d);
   color: #111;
@@ -128,7 +124,7 @@ body, .navbar, .navbar-item, .register-btn, .login-link, .hero-title, .hero-subt
   box-shadow: 0 3px 12px rgba(243, 193, 4, 0.3);
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  margin-right: 3.5rem; /* Even more space between buttons */
+  margin-right: 3.5rem; 
 }
 
 .register-btn:hover {
@@ -136,7 +132,6 @@ body, .navbar, .navbar-item, .register-btn, .login-link, .hero-title, .hero-subt
   box-shadow: 0 6px 20px rgba(243, 193, 4, 0.5);
 }
 
-/* لینک ورود */
 .login-link {
   color: #F3C104;
   font-size: 1.05rem;
@@ -186,4 +181,132 @@ body, .navbar, .navbar-item, .register-btn, .login-link, .hero-title, .hero-subt
   opacity: 1;
   background: #181818;
 }
+
+.search-btn-yellow {
+  background: #FFD600 ;
+  color: #0B2640 ;
+  border-radius: 8px 0 0 8px ;
+  border: none !;
+  box-shadow: none;
+ width: 150px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+.search-btn-yellow svg {
+  stroke: #0B2640 ;
+}
+.search-btn-yellow:hover {
+  background: #ffe066 ;
+}
+
+/*home banner*/
+.home-container {
+  direction: rtl;
+  font-family: 'Doran', sans-serif;
+  background: #222;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.hero-header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+  margin-top: 0;
+  padding-top: 64px;
+}
+.hero-header h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin: 0;
+}
+.hero-header p {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 0;
+  width: 900px;
+  max-width: 98%;
+}
+
+.search-select-group {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #eee;
+  flex: 1;
+  position: relative;
+}
+.search-select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 18px 44px 18px 16px;
+  background: transparent;
+  border-radius: 0;
+  appearance: none;
+  text-align: right;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 18px 44px 18px 16px;
+  background: transparent;
+  border-radius: 0;
+  text-align: right;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #bdbdbd;
+}
+
+.search-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #bdbdbd;
+}
+.search-btn:hover {
+  background: #ffe066;
+}
+
 
